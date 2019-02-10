@@ -1,0 +1,51 @@
+{
+    "name": "Full Size Image Viewer",
+    "version": "1.0",
+    "description": "Download or opens any image in full resolution!",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*","http://*/*"
+            ],
+            "css": [
+                "core/css/main.css"
+            ],
+            "js": [
+                "resources/jQuery/jquery-3.3.1.min.js",
+                "core/js/main.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        "images/*.png"
+    ],
+    "permissions": [
+        "activeTab",
+        "downloads",
+        "storage"
+    ],
+    "options_page": "options.html",
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "browser_action": {
+        "default_icon": {
+            "18": "images/baseline_image_search_black_18.png",
+            "24": "images/baseline_image_search_black_24.png",
+            "36": "images/baseline_image_search_black_36.png",
+            "48": "images/baseline_image_search_black_48.png"
+        },
+        "default_title": "Full Size Image Viewer",
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "18": "images/baseline_image_search_black_18.png",
+        "24": "images/baseline_image_search_black_24.png",
+        "36": "images/baseline_image_search_black_36.png",
+        "48": "images/baseline_image_search_black_48.png"
+    },
+    "manifest_version": 2
+}

@@ -1,0 +1,45 @@
+/* .ext-overlay-wrapper {
+    position: relative;
+}
+
+.ext-overlay-action {
+    position: absolute;
+    z-index: 100;
+    top: 3%;
+    right: 3%;
+    display: none;
+    outline: none;
+}
+
+.ext-overlay-action-img {
+    background-color: rgba(255, 255, 255, 0.4)!important;
+    border-radius: 10px!important;
+    padding: 5px!important;
+    box-shadow: #869498 1px 1px!important;
+} */
+
+.description_overlay {  
+    position: relative;
+	margin-left: 21em;
+	margin-top: 5em;
+}  
+
+.description {  
+    position: absolute; 
+    bottom: 5px;
+    left: 0px;  
+    display: none; 
+
+    background-color: black;  
+    font-family: "arial";  
+    font-size: 1em;  
+    color: white; 
+}  
+
+.description_content {  
+    padding: 20px;  
+}
+
+.description, img {
+	cursor: pointer;
+}

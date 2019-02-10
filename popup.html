@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Options - Full size image viewer</title>
+  <link rel="stylesheet" href="resources/uikit/css/uikit.min.css" />
+  <script src="resources/uikit/js/uikit.min.js"></script>
+  <script src="resources/uikit/js/uikit-icons.min.js"></script>
+</head>
+
+<body style="width: 320px">
+  <div class="uk-card uk-margin uk-margin-top uk-width-1-1">
+    <div class="uk-container uk-container-small uk-position-relative">
+      <h3 class="uk-card-title uk-align-center">
+        <img src="images/baseline_image_search_black_24.png" uk-img /> Image Hound</h3>
+      <p>Use the settings below to configure the extension</p>
+      <form class="uk-form-horizontal">
+        <div class="uk-margin">
+          <label class="uk-form-label" for="form-horizontal-select">Select image selection option</label>
+          <div class="uk-form-controls">
+            <select class="uk-select" id="form-horizontal-select">
+              <option value="direct" selected>Direct open</option>
+              <option value="subPage">Via sub page</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="uk-margin">
+          <label class="uk-form-label" for="form-horizontal-select"></label>
+          <div class="uk-form-controls">
+            <button class="uk-button uk-button-danger uk-width-1-1 uk-margin-small-bottom">
+              <span uk-icon="icon: close;"></span> Disable this site</button>
+            <button class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom">
+              <span uk-icon="icon: check;"></span> Enable on this site</button>
+            <button class="uk-button uk-button-default uk-width-1-1 uk-margin-small-bottom">Save</button>
+          </div>
+        </div>
+
+      </form>
+      <p class="uk-text-muted">Copyright Mr Arindam Debnath @
+        <a target="_blank" href="https://www.xopel.com">
+          <span>XO<b>PEL</b></span>
+        </a>
+      </p>
+
+    </div>
+  </div>
+</body>
+
+</html>
